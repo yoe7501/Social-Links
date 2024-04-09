@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('assets\fonts\static\Inter-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('assets\fonts\static\Inter-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('assets\fonts\static\Inter-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter-VariableFont';
+    src: url('assets\fonts\Inter-VariableFont_slnt,wght.ttf') format('truetype');
+}
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    --Green: hsl(75, 94%, 57%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-color: var(--Off-Black);
+    font-size: 14px;
+    color: var(--White);
+    text-align: center;
+    font-family: 'Inter-Regular', sans-serif;
+}
+
+.card {
+    background-color: var(--Dark-Grey);
+    border-radius: 10px;
+    max-width: 360px;
+}
+
+img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 20px;
+    margin-top: 30px;
+    margin: 30px 20px 0 20px;
+}
+.hover-buttons{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+button {
+    margin: 5px 30px 5px 30px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--Grey);
+    color: var(--White);
+    border: 0;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px 10px 30px;
+}
+h1 {
+    font-size: 24px;
+    padding: 5px;
+}
+h2{
+    font-size: 14px;
+}
+
+.description{
+    padding: 15px
+}
+.location {
+    color: var(--Green);
+    font-size: 13px;
+}
+
+button:hover {
+    background-color: var(--Green);
+    color: var(--Off-Black)
+}
